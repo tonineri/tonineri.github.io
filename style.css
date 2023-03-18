@@ -224,7 +224,7 @@ a {
   width: 30%;
   float: left;
   text-align: left;
-  padding-right: 5%;
+  padding-right: 1%;
   margin-bottom: 60px;
 }
 @media (max-width: 450px) {
