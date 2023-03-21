@@ -236,7 +236,8 @@ a {
 .experience .job-wrapper {
   width: 70%;
   float: left;
-  text-align: left;
+  text-align: justify;
+  text-justify: inter-word;
   padding-right: 5%;
   margin-bottom: 60px;
 }
