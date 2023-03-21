@@ -270,7 +270,8 @@ a {
 .section-wrapper {
   width: 50%;
   float: left;
-  text-align: left;
+  text-align: justify;
+  text-justify: inter-word;
   color: #9099a0;
   font-weight: 300;
   margin-bottom: 20px;
