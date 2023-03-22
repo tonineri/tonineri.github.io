@@ -1,1 +1,0 @@
-export const baseUrl = 'https://abc.example.com/Prod'
