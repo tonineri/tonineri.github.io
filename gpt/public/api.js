@@ -1,1 +1,0 @@
-export const baseUrl = 'https://tonineri.github.com/gpt'
