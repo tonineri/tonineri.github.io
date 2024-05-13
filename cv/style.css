@@ -1,5 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Red+Hat+Mono);
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700);
+@import url(https://fonts.googleapis.com/css?family=Fira+Mono);
 *, *::after, *::before {
   box-sizing: border-box;
 }
@@ -15,7 +16,7 @@ body {
 }
 
 a {
-  color: #66cc99;
+  color: #6c8772;
   text-decoration: none;
 }
 
@@ -195,11 +196,11 @@ a {
   left: 0;
 }
 .profile .st0, .profile .st1 {
-  fill: #66cc99;
+  fill: #6c8772;
 }
 
 .experience {
-  background: #3d3e42;
+  background: #606168;
   width: 70%;
   float: left;
   position: relative;
@@ -214,7 +215,7 @@ a {
   }
 }
 .experience h3.experience-title {
-  color: #66cc99;
+  color: #6c8772;
   text-align: left;
   text-transform: uppercase;
   font-size: 1.2em;
@@ -284,7 +285,7 @@ a {
   padding-right: 8%;
 }
 .section-wrapper h3.section-title {
-  color: #66cc99;
+  color: #6c8772;
   text-align: left;
   text-transform: uppercase;
   font-size: 1.2em;
@@ -306,7 +307,7 @@ a {
 .section-wrapper .skill-percentage::before {
   content: "";
   height: 6px;
-  background: #66cc99;
+  background: #6c8772;
   position: absolute;
   margin-top: 3px;
   bottom: 0;
