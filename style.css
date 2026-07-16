@@ -3125,11 +3125,11 @@
 .u-section-9 .u-container-layout-1,
 .u-section-10 .u-container-layout-1 {
   padding-top: 40px !important;
-  padding-bottom: 40px !important;
+  padding-bottom: 27px !important;
 }
 
 .sas-timeline {
-  padding-bottom: 40px !important;
+  padding-bottom: 27px !important;
 }
 
 .sas-position-last {
@@ -3238,7 +3238,7 @@
   .u-section-9 .u-container-layout-1,
   .u-section-10 .u-container-layout-1 {
     padding-top: 18px !important;
-    padding-bottom: 18px !important;
+    padding-bottom: 27px !important;
   }
 }
 
@@ -3342,4 +3342,33 @@
   .u-section-12 .u-text-1 {
     margin-top: 10px !important;
   }
+}
+
+/* ===== Vertically center SKILLS title with the skill bars column (desktop) ===== */
+.u-section-12 .u-layout-row {
+  align-items: center !important;
+}
+
+/* ===== Change experience divider line color from dark grey to #dfe3e0 ===== */
+.u-section-5 .u-line-1,
+.u-section-6 .u-line-1,
+.u-section-7 .u-line-1,
+.u-section-8 .u-line-1,
+.u-section-9 .u-line-1,
+.u-section-10 .u-line-1 {
+  border-color: #dfe3e0 !important;
+}
+
+/* ===== SAS timeline bar: fade in when the section enters the viewport ===== */
+.sas-line-track {
+  opacity: 0;
+  transition: opacity 0.7s ease;
+}
+.sas-line-track.sas-line-visible {
+  opacity: 1;
+}
+
+/* ===== Fix Army card's extra trailing margin (unique to this card) ===== */
+.u-section-10 .u-group-1 {
+  margin-bottom: 0 !important;
 }
