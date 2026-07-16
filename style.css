@@ -3275,3 +3275,8 @@
     text-align: left !important;
   }
 }
+
+/* ===== Restore bold styling on the proficiency level within mobile combined language lines ===== */
+.lang-level {
+  font-weight: 700;
+}
