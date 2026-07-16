@@ -3135,3 +3135,51 @@
 .sas-position-last {
   padding-bottom: 0 !important;
 }
+
+/* ===== Fix pre-existing font inconsistency: Camicissima & Sidel bullet lists ===== */
+.u-section-8 .u-text-6,
+.u-section-9 .u-text-6 {
+  font-family: Sora-Light !important;
+}
+
+/* ===== Fix mobile section titles collapsing to 1rem (pre-existing template bug) ===== */
+@media (max-width: 767px) {
+  .u-section-2 .u-text-1,
+  .u-section-4 .u-text-1,
+  .u-section-12 .u-text-1,
+  .u-section-14 .u-text-1,
+  .u-section-14 .u-text-2,
+  .u-section-16 .u-text-1 {
+    font-size: 2.5rem !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .u-section-2 .u-text-1,
+  .u-section-4 .u-text-1,
+  .u-section-12 .u-text-1,
+  .u-section-14 .u-text-1,
+  .u-section-14 .u-text-2,
+  .u-section-16 .u-text-1 {
+    font-size: 2rem !important;
+  }
+}
+
+/* ===== Fix Education/Languages divider column absurd min-height on mobile ===== */
+@media (max-width: 767px) {
+  .u-section-14 .u-layout-cell-2 {
+    min-height: 20px !important;
+  }
+}
+
+@media (max-width: 575px) {
+  .u-section-14 .u-layout-cell-2 {
+    min-height: 20px !important;
+  }
+}
+
+/* ===== Fix excess whitespace between References and footer ===== */
+.u-section-16 .u-sheet-1 {
+  min-height: 0 !important;
+  padding-bottom: 60px !important;
+}
