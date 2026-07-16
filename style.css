@@ -2962,6 +2962,10 @@
   padding-bottom: 40px;
 }
 
+.sas-timeline > .u-text-4 {
+  margin-bottom: 30px !important;
+}
+
 .sas-dot {
   position: absolute;
   left: 0;
@@ -3098,3 +3102,36 @@
 .u-section-12 .u-line-4 { width: 260px !important; } /* Microsoft Azure | AKS */
 .u-section-12 .u-line-6 { width: 230px !important; } /* AWS | EKS */
 .u-section-12 .u-line-8 { width: 200px !important; } /* GCP | GKE */
+
+/* ===== Normalize job-card spacing (remove mismatched leftover min-heights) ===== */
+.u-section-5 .u-sheet-1,
+.u-section-6 .u-sheet-1,
+.u-section-6 .u-group-1,
+.u-section-7 .u-sheet-1,
+.u-section-7 .u-group-1,
+.u-section-8 .u-sheet-1,
+.u-section-8 .u-group-1,
+.u-section-9 .u-sheet-1,
+.u-section-9 .u-group-1,
+.u-section-10 .u-sheet-1,
+.u-section-10 .u-group-1 {
+  min-height: 0 !important;
+  height: auto !important;
+}
+
+.u-section-6 .u-container-layout-1,
+.u-section-7 .u-container-layout-1,
+.u-section-8 .u-container-layout-1,
+.u-section-9 .u-container-layout-1,
+.u-section-10 .u-container-layout-1 {
+  padding-top: 40px !important;
+  padding-bottom: 40px !important;
+}
+
+.sas-timeline {
+  padding-bottom: 40px !important;
+}
+
+.sas-position-last {
+  padding-bottom: 0 !important;
+}
