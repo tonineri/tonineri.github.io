@@ -3260,3 +3260,18 @@
     text-align: left !important;
   }
 }
+
+/* ===== Languages: desktop keeps two-column layout, mobile shows combined "Language Level" lines ===== */
+.lang-mobile-only {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .lang-desktop-only {
+    display: none !important;
+  }
+  .lang-mobile-only {
+    display: block !important;
+    text-align: left !important;
+  }
+}
