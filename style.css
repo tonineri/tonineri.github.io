@@ -3381,3 +3381,28 @@
     min-height: 0 !important;
   }
 }
+
+/* ===== Fix missing fonts in mobile language grid ===== */
+.lang-name,
+.lang-level,
+.lang-uni {
+  font-family: Sora-Light;
+}
+
+/* ===== Fix AWS|EKS not centering on mobile (leftover large margin-right) ===== */
+@media (max-width: 991px) {
+  .u-section-12 .u-text-4 {
+    margin-right: 0 !important;
+  }
+}
+
+/* ===== Remove gap between location and dates on mobile job cards (match SAS) ===== */
+@media (max-width: 767px) {
+  .u-section-6 .u-text-4,
+  .u-section-7 .u-text-4,
+  .u-section-8 .u-text-4,
+  .u-section-9 .u-text-4,
+  .u-section-10 .u-text-4 {
+    margin-top: -5px !important;
+  }
+}
