@@ -2843,14 +2843,14 @@
 
 .u-section-1 .u-text-1 {
   margin: 10px 0 0 !important;
-  font-size: clamp(2.25rem, 8vw, 5.875rem) !important;
+  font-size: clamp(2.75rem, 10vw, 5.875rem) !important;
   text-align: center;
   transform: none !important;
 }
 
 .u-section-1 .u-text-2 {
   margin: 10px 0 0 !important;
-  font-size: clamp(1.15rem, 4vw, 3.125rem) !important;
+  font-size: clamp(1.5rem, 5.5vw, 3.125rem) !important;
   text-align: center;
   transform: none !important;
 }
@@ -3150,7 +3150,7 @@
   .u-section-14 .u-text-1,
   .u-section-14 .u-text-2,
   .u-section-16 .u-text-1 {
-    font-size: 2.5rem !important;
+    font-size: 3.25rem !important;
   }
 }
 
@@ -3161,7 +3161,7 @@
   .u-section-14 .u-text-1,
   .u-section-14 .u-text-2,
   .u-section-16 .u-text-1 {
-    font-size: 2rem !important;
+    font-size: 2.75rem !important;
   }
 }
 
@@ -3261,7 +3261,7 @@
   }
 }
 
-/* ===== Languages: desktop keeps two-column layout, mobile shows combined "Language Level" lines ===== */
+/* ===== Languages: desktop keeps two-column layout; mobile shows a right/left grid ===== */
 .lang-mobile-only {
   display: none;
 }
@@ -3270,15 +3270,31 @@
   .lang-desktop-only {
     display: none !important;
   }
-  .lang-mobile-only {
-    display: block !important;
-    text-align: left !important;
+  .u-section-14 .lang-mobile-only {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 18px;
+    row-gap: 10px;
+    max-width: 320px;
+    margin: 0 auto !important;
+    text-align: initial !important;
+  }
+  .lang-name {
+    text-align: right;
+    align-self: start;
+  }
+  .lang-level {
+    text-align: left;
+  }
+  .lang-uni {
+    text-align: left;
+    line-height: 1.4;
   }
 }
 
-/* ===== Restore bold styling on the proficiency level within mobile combined language lines ===== */
 .lang-level {
   font-weight: 700;
+  color: #a8bd97;
 }
 
 /* ===== Mobile-only polish: hide photo, center About Me / Skills / Languages ===== */
@@ -3315,9 +3331,15 @@
     margin-left: auto !important;
     margin-right: auto !important;
   }
+}
 
-  /* 4. Center Languages content */
-  .u-section-14 .lang-mobile-only {
-    text-align: center !important;
+/* ===== Fix gap before SKILLS title on mobile (leftover oversized cell min-height) ===== */
+@media (max-width: 991px) {
+  .u-section-12 .u-layout-cell-1,
+  .u-section-12 .u-layout-cell-2 {
+    min-height: 0 !important;
+  }
+  .u-section-12 .u-text-1 {
+    margin-top: 10px !important;
   }
 }
