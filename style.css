@@ -2894,12 +2894,43 @@
   width: auto !important;
 }
 
-/* From tablet width upward: photo on the left, text left-aligned to its right */
+/* From tablet width upward: photo bleeds full-height, flush to the section,
+   text sits vertically centered beside it (matches the original anchored look) */
 @media (min-width: 768px) {
+  .u-section-1 .u-sheet-1 {
+    padding: 0 !important;
+    min-height: 0 !important;
+  }
+
   .u-section-1 .u-layout-row {
     flex-wrap: nowrap;
     justify-content: flex-start;
-    align-items: center;
+    align-items: stretch !important;
+    gap: 0 !important;
+  }
+
+  .u-section-1 .u-layout-cell-1 {
+    flex: 0 0 auto !important;
+  }
+
+  .u-section-1 .u-container-layout-1 {
+    display: block;
+    height: 100%;
+    padding: 0 !important;
+  }
+
+  .u-section-1 .u-image-1 {
+    display: block !important;
+    width: auto !important;
+    max-width: none !important;
+    height: 420px !important;
+    object-fit: cover;
+    margin: 0 !important;
+  }
+
+  .u-section-1 .u-layout-cell-2 {
+    align-self: center !important;
+    padding: 40px 0 40px 50px;
   }
 
   .u-section-1 .u-container-layout-2,
@@ -2912,9 +2943,6 @@
   .u-section-1 .u-container-layout-3 {
     justify-content: flex-start;
   }
-
-  .u-section-1 .u-image-1 {
-    width: 320px !important;
-    max-width: 320px !important;
-  }
 }
+
+
