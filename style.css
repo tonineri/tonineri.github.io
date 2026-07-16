@@ -2951,24 +2951,8 @@
 .sas-timeline {
   max-width: 900px;
   margin: 0 auto;
-  padding: 60px 20px 50px;
-}
-
-.sas-company {
-  font-size: 2rem;
-  font-weight: 700;
-  margin: 26px 0 4px;
-}
-
-.sas-summary {
-  font-size: 1.1rem;
-  margin: 0 0 2px;
-}
-
-.sas-location {
-  font-size: 0.95rem;
-  color: #777;
-  margin: 0 0 40px;
+  padding: 20px 20px 50px;
+  position: relative;
 }
 
 .sas-position {
@@ -2976,16 +2960,6 @@
   text-align: left;
   padding-left: 34px;
   padding-bottom: 40px;
-}
-
-.sas-position:not(.sas-position-last)::before {
-  content: "";
-  position: absolute;
-  left: 6px;
-  top: 20px;
-  bottom: 0;
-  width: 0;
-  border-left: 2px dotted #c2c2c2;
 }
 
 .sas-dot {
@@ -2996,40 +2970,54 @@
   height: 13px;
   border-radius: 50%;
   background: #fff;
-  border: 2px solid #9aa5a0;
+  border: 2px solid #a8bd97;
   box-sizing: border-box;
+  z-index: 2;
+}
+
+/* Continuous connecting line: grey track + green fill that grows as you scroll */
+.sas-line-track {
+  position: absolute;
+  width: 3px;
+  background: #dfe3e0;
+  z-index: 0;
+}
+
+.sas-line-fill {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0%;
+  background: #a8bd97;
+  transition: height 0.1s linear;
 }
 
 .sas-position-title {
-  font-weight: 700;
-  font-size: 1.15rem;
-  margin: 0 0 2px;
+  margin-top: 0 !important;
+  margin-bottom: 2px !important;
 }
 
 .sas-position-dates {
-  font-size: 0.9rem;
-  color: #777;
-  margin: 0 0 12px;
+  margin-top: 2px !important;
+  margin-bottom: 12px !important;
+  color: #888 !important;
 }
 
 .sas-position-intro {
-  margin: 0 0 14px;
+  margin-bottom: 14px !important;
   line-height: 1.55;
 }
 
 .sas-position-bullets {
-  margin: 0;
+  margin: 0 !important;
   padding-left: 20px;
+  list-style: disc;
 }
 
 .sas-position-bullets li {
   margin-bottom: 10px;
   line-height: 1.5;
-}
-
-@media (max-width: 600px) {
-  .sas-company { font-size: 1.5rem; }
-  .sas-position-title { font-size: 1.02rem; }
 }
 
 /* ===== Additional skill bars: Terraform/Ansible, CI/CD (GitOps) ===== */
@@ -3104,3 +3092,9 @@
   height: 15px;
   margin: -15px 90px 0 0;
 }
+
+/* ===== Skill bar reorder: widths follow their label to the new slot order ===== */
+.u-section-12 .u-line-2 { width: 250px !important; } /* Red Hat OpenShift | OCP */
+.u-section-12 .u-line-4 { width: 260px !important; } /* Microsoft Azure | AKS */
+.u-section-12 .u-line-6 { width: 230px !important; } /* AWS | EKS */
+.u-section-12 .u-line-8 { width: 200px !important; } /* GCP | GKE */
