@@ -2788,4 +2788,133 @@
   font-style: normal;
   font-weight: 400;
   src: url(fonts/Sora-Light.ttf);
+}/* ===== Responsive header fix (Antonio Neri) ===== */
+/* Replaces fixed-pixel absolute positioning with a flexbox layout
+   that works at any viewport width instead of only specific tested ones. */
+
+.u-section-1 .u-sheet-1 {
+  min-height: auto !important;
+  padding: 50px 20px !important;
+}
+
+.u-section-1 .u-layout-wrap-1 {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+.u-section-1 .u-layout-row {
+  display: flex !important;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 24px 40px;
+  width: 100%;
+}
+
+.u-section-1 .u-layout-cell-1,
+.u-section-1 .u-layout-cell-2 {
+  min-height: auto !important;
+  flex: 0 0 auto !important;
+  max-width: 100% !important;
+  width: auto !important;
+}
+
+.u-section-1 .u-container-layout-1 {
+  padding: 0 !important;
+  display: flex;
+  justify-content: center;
+}
+
+.u-section-1 .u-image-1 {
+  position: static !important;
+  width: 240px !important;
+  max-width: 55vw !important;
+  height: auto !important;
+  transform: none !important;
+  left: auto !important;
+  right: auto !important;
+  margin: 0 auto !important;
+}
+
+.u-section-1 .u-container-layout-2 {
+  padding: 0 !important;
+  text-align: center;
+}
+
+.u-section-1 .u-text-1 {
+  margin: 10px 0 0 !important;
+  font-size: clamp(2.25rem, 8vw, 5.875rem) !important;
+  text-align: center;
+  transform: none !important;
+}
+
+.u-section-1 .u-text-2 {
+  margin: 10px 0 0 !important;
+  font-size: clamp(1.15rem, 4vw, 3.125rem) !important;
+  text-align: center;
+  transform: none !important;
+}
+
+.u-section-1 .u-group-1 {
+  margin: 20px auto 0 !important;
+  height: auto !important;
+  min-height: auto !important;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.u-section-1 .u-container-layout-3 {
+  padding: 0 !important;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  gap: 16px !important;
+  flex-wrap: wrap;
+}
+
+.u-section-1 .u-social-icons-1,
+.u-section-1 .u-social-icons-2,
+.u-section-1 .u-social-icons-3,
+.u-section-1 .u-social-icons-4 {
+  position: static !important;
+  margin: 0 !important;
+  transform: none !important;
+  height: 28px !important;
+  width: 28px !important;
+  min-height: 0 !important;
+  min-width: 0 !important;
+}
+
+.u-section-1 .u-icon-1,
+.u-section-1 .u-icon-2,
+.u-section-1 .u-icon-3,
+.u-section-1 .u-icon-4 {
+  height: 28px !important;
+  width: auto !important;
+}
+
+/* From tablet width upward: photo on the left, text left-aligned to its right */
+@media (min-width: 768px) {
+  .u-section-1 .u-layout-row {
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .u-section-1 .u-container-layout-2,
+  .u-section-1 .u-text-1,
+  .u-section-1 .u-text-2 {
+    text-align: left;
+  }
+
+  .u-section-1 .u-group-1,
+  .u-section-1 .u-container-layout-3 {
+    justify-content: flex-start;
+  }
+
+  .u-section-1 .u-image-1 {
+    width: 320px !important;
+    max-width: 320px !important;
+  }
 }
