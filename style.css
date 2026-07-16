@@ -68,7 +68,7 @@
   min-height: 16px;
   width: 25px;
   min-width: 16px;
-  transition-duration: 0.5s;
+  transition-duration: 0.15s;
   transform: rotate(0deg) scale(1) translateX(0px) translateY(0px);
   margin: 10px auto 0 73px;
 }
@@ -82,7 +82,7 @@
   min-height: 16px;
   width: 25px;
   min-width: 16px;
-  transition-duration: 0.5s;
+  transition-duration: 0.15s;
   transform: rotate(0deg) scale(1) translateX(0px) translateY(0px);
   margin: -25px auto 0 108px;
 }
@@ -96,7 +96,7 @@
   min-height: 16px;
   width: 25px;
   min-width: 16px;
-  transition-duration: 0.5s;
+  transition-duration: 0.15s;
   margin: -25px auto 0 3px;
 }
 
@@ -109,7 +109,7 @@
   min-height: 16px;
   width: 25px;
   min-width: 16px;
-  transition-duration: 0.5s;
+  transition-duration: 0.15s;
   margin: -25px auto 0 38px;
 }
 
