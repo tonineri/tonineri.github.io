@@ -68,7 +68,7 @@
   min-height: 16px;
   width: 25px;
   min-width: 16px;
-  transition-duration: 0.15s;
+  transition-duration: 0.5s;
   transform: rotate(0deg) scale(1) translateX(0px) translateY(0px);
   margin: 10px auto 0 73px;
 }
@@ -82,7 +82,7 @@
   min-height: 16px;
   width: 25px;
   min-width: 16px;
-  transition-duration: 0.15s;
+  transition-duration: 0.5s;
   transform: rotate(0deg) scale(1) translateX(0px) translateY(0px);
   margin: -25px auto 0 108px;
 }
@@ -96,7 +96,7 @@
   min-height: 16px;
   width: 25px;
   min-width: 16px;
-  transition-duration: 0.15s;
+  transition-duration: 0.5s;
   margin: -25px auto 0 3px;
 }
 
@@ -109,7 +109,7 @@
   min-height: 16px;
   width: 25px;
   min-width: 16px;
-  transition-duration: 0.15s;
+  transition-duration: 0.5s;
   margin: -25px auto 0 38px;
 }
 
@@ -3405,4 +3405,28 @@
   .u-section-10 .u-text-4 {
     margin-top: -5px !important;
   }
+}
+
+/* ===== Speed up sluggish 0.5s hover-zoom on header social icons ===== */
+.u-section-1 .u-social-icons-1,
+.u-section-1 .u-social-icons-2,
+.u-section-1 .u-social-icons-3,
+.u-section-1 .u-social-icons-4 {
+  transition-duration: 0.15s !important;
+}
+
+/* ===== Add font-display:swap to prevent invisible text during custom font load ===== */
+@font-face {
+  font-family: 'Fraunces_120pt-Light';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(fonts/Fraunces_120pt-Light.ttf);
+}
+@font-face {
+  font-family: 'Sora-Light';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(fonts/Sora-Light.ttf);
 }
